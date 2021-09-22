@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  background-color: white;
+  width: 85%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: $tablet-bp) {
+    flex-direction: row;
+    width: 75%;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 268px;
+    max-width: 300px;
+    position: absolute;
+    top: -7rem;
+    @media screen and (min-width: $tablet-bp) {
+      position: relative;
+      width: 40%;
+      top: 0;
+      right: 14%;
+    }
+  }
+
+  &__body {
+    margin-top: 5rem;
+    background: burlywood;
+  }
+
+  &__header {
+    color: $text-color-primary;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+}
