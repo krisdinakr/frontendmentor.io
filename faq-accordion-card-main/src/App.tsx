@@ -1,9 +1,9 @@
+import { Card } from 'components';
+
 const App = () => (
-    <div className="App">
-      <header className="App-header">
-        Hello
-      </header>
-    </div>
-  );
+  <div className="App">
+    <Card />
+  </div>
+);
 
 export default App;
