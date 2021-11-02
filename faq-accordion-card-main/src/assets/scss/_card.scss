@@ -1,40 +1,104 @@
 .card {
   position: relative;
   background-color: white;
-  width: 85%;
+  min-height: 507px;
+  width: 920px;
+  max-width: 100%;
   border-radius: 20px;
+  margin: 0 24px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media screen and (min-width: $tablet-bp) {
-    flex-direction: row;
-    width: 75%;
-    overflow: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  @media screen and (max-width: $mobile-bp) {
+    flex-direction: column;
   }
 
   &__image {
-    width: 268px;
-    max-width: 300px;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: $mobile-bp) {
+      overflow: visible;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__bg-1 {
     position: absolute;
-    top: -7rem;
-    @media screen and (min-width: $tablet-bp) {
-      position: relative;
-      width: 40%;
+    background: url('../images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    height: 1014px;
+    width: 80%;
+    margin-right: 10%;
+    margin-top: -70%;
+    @media screen and (max-width: $tablet-bp) {
+      height: 875px;
+    }
+    @media screen and (max-width: $mobile-bp) {
+      background: url('../images/bg-pattern-mobile.svg');
+      background-size: contain;
+      max-width: 230px;
+      max-height: 200px;
+      margin: 0;
       top: 0;
-      right: 14%;
+    }
+  }
+
+  &__bg-2 {
+    position: absolute;
+    background: url('../images/illustration-woman-online-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    height: 100%;
+    width: 95%;
+    margin-top: 25px;
+    margin-left: -15px;
+    @media screen and (max-width: $mobile-bp) {
+      z-index: 10;
+      background: url('../images/illustration-woman-online-mobile.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0;
+      max-width: 250px;
+      height: 250px;
+      top: -85px;
+      margin: -5% 7% 0 0;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    width: 10%;
+    min-width: 90px;
+    height: auto;
+    top: 45%;
+    left: -10%;
+    z-index: 1;
+    img {
+      max-width: 18vw;
+      @media screen and (max-width: $mobile-bp) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: $tablet-bp) {
+      top: 36vh;
     }
   }
 
   &__body {
-    margin-top: 5rem;
-    background: burlywood;
+    flex: 1;
   }
 
   &__header {
     color: $text-color-primary;
-    text-align: center;
-    margin-bottom: 0.8rem;
-    margin-top: 3rem;
     font-size: 2rem;
+    font-weight: 700;
+    padding-top: 5.5rem;
+    padding-bottom: 1rem;
   }
 }

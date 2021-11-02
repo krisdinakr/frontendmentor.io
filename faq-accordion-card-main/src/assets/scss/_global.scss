@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-kumbh;
+  background-image: linear-gradient($soft-violet, $soft-blue);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 0.75rem;
+  @media screen and (max-width: $mobile-bp) {
+    overflow: visible;
+    flex-direction: column;
+    margin: 20vh 24px 0 24px;
+  }
+}

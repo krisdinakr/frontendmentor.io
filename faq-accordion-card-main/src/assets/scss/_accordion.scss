@@ -1,39 +1,9 @@
 .accordion {
-  list-style: none;
-  margin-bottom: 3rem;
-
-  &__item {
-    width: 16.8rem;
-    border-bottom: 1px solid $divider;
-  }
+  margin-right: 5vw;
+  font-weight: 400;
+  height: 507px;
 
   &__title {
-    font-size: 0.87rem;
-    font-weight: 400;
-    position: relative;
-    background-color: transparent;
-    color: $text-color-dark;
-    cursor: pointer;
-    padding: 1.2rem 0;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-
-  &__title--active {
-    font-weight: 700;
-    color: $text-color-primary;
-  }
-
-  &__icon {
-    position: absolute;
-    right: 0;
-    bottom: 1.44rem;
-  }
-
-  &__description {
-    display: none;
+    display: flex;
   }
 }

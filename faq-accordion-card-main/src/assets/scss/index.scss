@@ -1,10 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 @import 'variables';
-@import 'app';
+@import 'global';
 @import 'card';
 @import 'accordion';
