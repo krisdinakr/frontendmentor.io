@@ -1,10 +1,11 @@
-import { Navbar } from 'components';
+import { Header, Navbar } from 'components';
 
 const App = () => {
   return (
-    <div className="landing-page">
+    <>
       <Navbar />
-    </div>
+      <Header />
+    </>
   )
 }
 
