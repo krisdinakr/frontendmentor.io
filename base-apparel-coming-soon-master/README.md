@@ -39,7 +39,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Live Site URL: [Base Apparel Coming Soon Page](https://krisdina-frontend-mentor-coming-soon-page.vercel.app/)
+- Live Site URL: [Base Apparel Coming Soon Page](https://demo-coming-soon-page.vercel.app/)
 
 ## My process
 
