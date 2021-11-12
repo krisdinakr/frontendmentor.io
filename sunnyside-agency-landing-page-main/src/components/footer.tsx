@@ -1,7 +1,7 @@
 export const Footer = () => (
   <footer className="footer">
     <div className="footer__container">
-      <h3 className="footer__title">sunnyside</h3>
+      <div className="footer__logo"></div>
       <ul className="footer__links">
         <li><a className="footer__link" href="/">About</a></li>
         <li><a className="footer__link" href="/">Services</a></li>

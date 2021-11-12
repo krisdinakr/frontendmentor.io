@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import menu from 'assets/images/icon-hamburger.svg';
+import logo from 'assets/images/logo.svg';
 
 export const Navbar = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
@@ -7,7 +8,7 @@ export const Navbar = () => {
   return (
   <nav className="navbar">
     <div className="navbar__wrapper">
-      <a href="/" className="navbar__brand">sunnyside</a>
+      <a href="/" className="navbar__brand"><img src={logo} alt="Sunnyside Agency" /></a>
       <div className={`navbar__collapse ${isClicked && 'show'}`}>
         <div className="navbar__links">
           <a href="/" className="navbar__link">About</a>
