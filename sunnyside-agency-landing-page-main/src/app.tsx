@@ -1,10 +1,12 @@
-import { Header, Navbar } from 'components';
+import { Footer, Header, Main, Navbar } from 'components';
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Header />
+      <Main />
+      <Footer />
     </>
   )
 }

@@ -1,0 +1,28 @@
+.testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3.8rem 2rem;
+
+  &__title {
+    font-family: $font-family-fraunces;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-weight: 900;
+    color: $dark-grayish-blue;
+    text-align: center;
+    @media screen and (max-width: 600px) {
+      letter-spacing: .2rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    } 
+  }
+}
